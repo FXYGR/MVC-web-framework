@@ -13,9 +13,9 @@
 
 # 详细  
 ## 注册  
-![register](https://github.com/FXYGR/MVC-web-framework/blob/master/image/register.gif "register")
+![register](https://github.com/FXYGR/MVC-web-framework/blob/master/image/login.gif "register")
 ## 登录
-![login](https://github.com/FXYGR/MVC-web-framework/blob/master/image/login.gif "login")
+![login](https://github.com/FXYGR/MVC-web-framework/blob/master/image/register.gif "login")
 ## Todo 增删改查
 ![todo](https://github.com/FXYGR/MVC-web-framework/blob/master/image/Todo.gif "todo")
 ## Weibo 增删改查
