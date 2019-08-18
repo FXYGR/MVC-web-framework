@@ -20,5 +20,7 @@
 ![todo](https://github.com/FXYGR/MVC-web-framework/blob/master/image/Todo.gif "todo")
 ## Weibo 增删改查
 ![weibo](https://github.com/FXYGR/MVC-web-framework/blob/master/image/weibo.gif "weibo")
+## 密码 Hash 存储
+![password](https://github.com/FXYGR/MVC-web-framework/blob/master/image/password.gif "password")
 ## 权限验证
 ![login_required](https://github.com/FXYGR/MVC-web-framework/blob/master/static/dribbble1.gif "login_required")
