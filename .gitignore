@@ -1,5 +1,5 @@
 .idea
 *.pyc
 secret.py
-*.text
+*.txt
 *.md
