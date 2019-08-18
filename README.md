@@ -23,4 +23,4 @@
 ## 密码 Hash 存储
 ![password](https://github.com/FXYGR/MVC-web-framework/blob/master/image/password.png "password")
 ## 权限验证
-![login_required](https://github.com/FXYGR/MVC-web-framework/blob/master/static/login_required.gif "login_required")
+![login_required](https://github.com/FXYGR/MVC-web-framework/blob/master/image/login_required.gif "login_required")
