@@ -58,7 +58,7 @@ def fake_data():
     Test.new({})
 
     form = dict(
-        username='gua',
+        username='test',
         password='123',
         role=UserRole.normal,
     )
