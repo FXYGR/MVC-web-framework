@@ -13,12 +13,12 @@
 
 # 详细  
 ## 注册  
-![register](https://github.com/FXYGR/MVC-web-framework/image/register.gif "注册")
+![register](https://github.com/FXYGR/MVC-web-framework/blob/master/image/register.gif "register")
 ## 登录
-![login](https://github.com/FXYGR/MVC-web-framework/image/login.gif "login")
+![login](https://github.com/FXYGR/MVC-web-framework/blob/master/image/login.gif "login")
 ## Todo 增删改查
-![todo](https://github.com/FXYGR/MVC-web-framework/image/Todo.gif "todo")
+![todo](https://github.com/FXYGR/MVC-web-framework/blob/master/image/Todo.gif "todo")
 ## Weibo 增删改查
-![weibo](https://github.com/FXYGR/MVC-web-framework/image/Weibo.gif "weibo")
+![weibo](https://github.com/FXYGR/MVC-web-framework/blob/master/image/weibo.gif "weibo")
 ## 权限验证
 ![login_required](https://github.com/FXYGR/MVC-web-framework/blob/master/static/dribbble1.gif "login_required")
