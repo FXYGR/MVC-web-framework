@@ -25,7 +25,7 @@ class Request(object):
 
     def add_headers(self, header):
         """
-        Cookie: user=gua
+        Cookie: user=test
         """
         lines = header
         for line in lines:
@@ -59,11 +59,11 @@ class Request(object):
 
     def parse_path(self, path):
         """
-        输入: /gua?message=hello&author=gua
+        输入: /test?message=hello&author=test
         返回
-        (gua, {
+        (test, {
             'message': 'hello',
-            'author': 'gua',
+            'author': 'test',
         })
         """
         index = path.find('?')

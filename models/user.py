@@ -51,7 +51,7 @@ class User(SQLModel):
     @classmethod
     def login(cls, form):
         salted = cls.salted_password(form['password'])
-        u = User.one_for_username_and_password(username=form['username'], password=salted)
+        u = User.one(username=form['username'], password=salted)
         if u is not None:
             result = '登录成功'
             return u, result

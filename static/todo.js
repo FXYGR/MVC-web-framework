@@ -1,22 +1,10 @@
-var log = console.log.bind(console, new Date().toLocaleString())
-
-var e = function (selector) {
-    return document.querySelector(selector)
-}
-
 var todoTemplate = function (todo) {
     var t = `
     <div class="todo-cell">
         <span>${todo}</span>
     </div>
     `
-    /*
-    t = """
-    <div class="todo-cell">
-        <span>{}</span>
-    </div>
-    """.format(todo)
-     */
+
     return t
 }
 

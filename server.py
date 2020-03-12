@@ -14,6 +14,7 @@ from routes.routes_weibo import route_dict as weibo_routes
 from routes.routes_user import route_dict as user_routes
 from routes.routes_public import route_dict as public_routes
 from routes.routes_comment import route_dict as comment_routes
+from routes.routes_login_ajax import route_dict as login_ajax_routes
 
 
 def response_for_path(request):
@@ -21,6 +22,13 @@ def response_for_path(request):
     根据 path 调用相应的处理函数
     没有处理的 path 会返回 404
     """
+    r = routes_path_update()
+    response = r.get(request.path, error)
+    log('request', request, response)
+    return response(request)
+
+
+def routes_path_update():
     r = {}
     # 注册外部的路由
     r.update(todo_routes())
@@ -29,9 +37,8 @@ def response_for_path(request):
     r.update(public_routes())
     r.update(todo_ajax_routes())
     r.update(comment_routes())
-    response = r.get(request.path, error)
-    log('request', request, response)
-    return response(request)
+    r.update(login_ajax_routes())
+    return r
 
 
 def request_from_connection(connection):

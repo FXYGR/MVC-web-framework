@@ -40,7 +40,7 @@ class SQLModel(object):
     @classmethod
     def insert(cls, form):
         # {
-        #     'username': 'gua',
+        #     'username': 'test',
         #     'password': 123,
         # }
         form.pop('id')
@@ -138,7 +138,7 @@ class SQLModel(object):
         # SELECT * FROM
         # 	`User`
         # WHERE
-        # 	username='gua'
+        # 	username='test'
         # LIMIT 1
         sql_set = ' AND '.join(
             ['`{}`=%s'.format(k) for k in kwargs.keys()]

@@ -11,10 +11,6 @@ from utils import log
 from models.user import User
 
 
-# 不要这么 import
-# from xx import a, b, c, d, e, f
-
-
 def login(request):
     """
     登录页面的路由函数
@@ -56,32 +52,11 @@ def register(request):
     return redirect('/user/register/view?result={}'.format(quote(result)))
 
 
-# @route('/register', 'GET')
 def register_view(request):
     result = request.query.get('result', '')
     result = unquote_plus(result)
 
     return html_response('register.html', result=result)
-
-
-# RESTFul
-# GET /login login_get
-# POST /login login_post
-# UPDATE /user login_update
-# DELETE /user login_delete
-#
-# GET /login
-# POST /login/view
-# POST /user/update
-# GET /user/delete
-
-# user_get()
-# user_post()
-# def user:
-#     if method == 'GET':
-#         return user_get()
-#     else:
-#         return user_post()
 
 
 def route_dict():

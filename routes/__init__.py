@@ -12,7 +12,6 @@ from models.user import User
 from utils import log
 
 
-
 def initialized_environment():
     parent = os.path.dirname(os.path.dirname(__file__))
     path = os.path.join(parent, 'templates')
@@ -23,7 +22,7 @@ def initialized_environment():
     return e
 
 
-class GuaTemplate:
+class TestTemplate:
     e = initialized_environment()
 
     @classmethod
@@ -78,9 +77,9 @@ def error(request, code=404):
 def formatted_header(headers, code=200):
     """
     Content-Type: text/html
-    Set-Cookie: user=gua
+    Set-Cookie: user=test
     """
-    header = 'HTTP/1.1 {} OK GUA\r\n'.format(code)
+    header = 'HTTP/1.1 {} OK TEST\r\n'.format(code)
     header += ''.join([
         '{}: {}\r\n'.format(k, v) for k, v in headers.items()
     ])
@@ -111,7 +110,7 @@ def redirect(url, session_id=None):
 
 
 def html_response(filename, **kwargs):
-    body = GuaTemplate.render(filename, **kwargs)
+    body = TestTemplate.render(filename, **kwargs)
 
     # 下面 3 行可以改写为一条函数, 还把 headers 也放进函数中
     headers = {

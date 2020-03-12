@@ -1,6 +1,5 @@
 from models.todo_ajax import TodoAjax
 from routes import (
-    redirect,
     current_user,
     html_response,
     login_required,
@@ -12,7 +11,6 @@ def index(request):
     """
     todo 首页的路由函数
     """
-    u = current_user(request)
     # 替换模板文件中的标记字符串
     return html_response('todo_ajax_index.html')
 
@@ -44,8 +42,8 @@ def route_dict():
     value 是路由处理函数(就是响应)
     """
     d = {
-        '/todo/ajax/add': add,
-        '/todo/ajax/index': index,
-        '/todo/ajax/all': all,
+        '/todo/ajax/add': login_required(add),
+        '/todo/ajax/index': login_required(index),
+        '/todo/ajax/all': login_required(all),
     }
     return d
